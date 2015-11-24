@@ -8,8 +8,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private static int counter = 0;
+    private static String[] quotes = {"This is a quote", "This is another quote", "This is a third quote", "This is a fourth quote", "this is a fifth quote", "this is a sixth quote"};
+    private static String[] authorArray = {"Abraham Lincoln", "Bob Saget", "Scarlett Johanson", "Michael Scott", "George Clooney", "Leslie Knope"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,38 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Quotes");
         setSupportActionBar(toolbar);
+
+        final TextView quoteText = (TextView) findViewById(R.id.quoteText);
+        final TextView quoteNumber = (TextView) findViewById(R.id.quoteNum);
+        final TextView authors = (TextView) findViewById(R.id.author);
+
+        final Button nextButton = (Button) findViewById(R.id.buttonNext);
+        final Button prevButton = (Button) findViewById(R.id.buttonPrev);
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(counter < 5) {
+                    counter++;
+                    quoteText.setText(quotes[counter]);
+                    quoteNumber.setText(counter+1 + "/6");
+                    authors.setText(authorArray[counter]);
+                }
+            }
+        });
+
+        prevButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(counter > 0) {
+                    counter--;
+                    quoteText.setText(quotes[counter]);
+                    quoteNumber.setText(counter+1 + "/6");
+                    authors.setText(authorArray[counter]);
+                }
+            }
+        });
+
     }
 
     @Override

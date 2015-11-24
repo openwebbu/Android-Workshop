@@ -23,7 +23,7 @@
         android:id="@+id/quoteNum" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You can fool all the people some of the time, and some of the people all the time, but you cannot fool all the people all the time "
         android:id="@+id/quoteText"
