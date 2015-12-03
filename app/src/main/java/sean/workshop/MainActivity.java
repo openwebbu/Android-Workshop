@@ -13,8 +13,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private static int counter = 0;
-    private static String[] quotes = {"This is a quote", "This is another quote", "This is a third quote", "This is a fourth quote", "this is a fifth quote", "this is a sixth quote"};
-    private static String[] authorArray = {"Abraham Lincoln", "Bob Saget", "Scarlett Johanson", "Michael Scott", "George Clooney", "Leslie Knope"};
+    private static String[] quotes = {"Life is a crazy, mystical thing. And sometimes, you just go out like a buster."
+            , "This is another quote", "This is a third quote", "This is a fourth quote", "this is a fifth quote", "this is a sixth quote"};
+    private static String[] authorArray = {"C9 Mango", "Bob Saget", "Scarlett Johanson", "Michael Scott", "George Clooney", "Leslie Knope"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
