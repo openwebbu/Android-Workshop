@@ -14,8 +14,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static int counter = 0;
     private static String[] quotes = {"Life is a crazy, mystical thing. And sometimes, you just go out like a buster."
-            , "This is another quote", "This is a third quote", "This is a fourth quote", "this is a fifth quote", "this is a sixth quote"};
-    private static String[] authorArray = {"C9 Mango", "Bob Saget", "Scarlett Johanson", "Michael Scott", "George Clooney", "Leslie Knope"};
+            , "Mistakes are always forgivable, if one has the courage to admit them.", "We all make choices in life, but in the end our choices make us.", "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.", "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.", "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that."};
+    private static String[] authorArray = {"C9 Mango", "Bruce Lee", "Andrew Ryan", "Marilyn Monroe", "Maya Angelou", "Martin Luther King Jr."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
